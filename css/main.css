@@ -25,5 +25,6 @@ html, body {
 
 .header__left .categories {
   margin-right: 5px;
+  align-self: center;
 }
 /*# sourceMappingURL=main.css.map */
