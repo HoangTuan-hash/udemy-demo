@@ -10,4 +10,20 @@ html, body {
   font-size: 15px;
   font-weight: normal;
 }
+
+.header__left {
+  display: flex;
+}
+
+.header__left .navbar-brand img {
+  width: 110px;
+}
+
+.header__left .header__form {
+  flex-grow: 1;
+}
+
+.header__left .categories {
+  margin-right: 5px;
+}
 /*# sourceMappingURL=main.css.map */

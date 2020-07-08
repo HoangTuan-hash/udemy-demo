@@ -1,0 +1,16 @@
+.header__left{
+    display: flex;
+    // align-items: center;
+    .navbar-brand{
+        
+        img{
+            width: 110px;
+        }
+    }
+    .header__form{
+        flex-grow: 1;
+    }
+    .categories{
+        margin-right: 5px;
+    }
+}
