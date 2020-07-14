@@ -2,16 +2,38 @@
     display: flex;
     // align-items: center;
     .navbar-brand{
-        
         img{
             width: 110px;
         }
     }
     .header__form{
         flex-grow: 1;
+        @include styleFormSeach($color-white-cream,$color-white-cream,$color-gray-6);
     }
     .categories{
         margin-right: 5px;
         align-self: center;
     }
+}
+.header__right{
+    //Resoponsive
+    @include responsive(extra-large){
+        //content
+        .business,.teach{
+            display: none;
+        }
+    }
+}
+@include responsive("medium"){
+        .header__left{
+            justify-content: center;
+            .categories,.header__form{
+                display: none;
+            }
+        }
+        .header__right{
+            .btn-group{
+                display: none;
+            }
+        }
 }

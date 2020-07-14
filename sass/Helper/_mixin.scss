@@ -3,3 +3,68 @@
     font-size: $fs;
     font-weight: $fw;
 }
+@mixin styleFormSeach ($bg-color,$bd-color,$bd-focus){
+    .input-group{
+        background-color: $bg-color;
+        border: 1px solid $bd-color;
+        .form-control{
+            background-color: transparent;
+            border-color: transparent;
+            transition: none;
+            box-shadow: none;
+            &:focus{
+                background-color: $color-white-0;
+                border-color: $bd-focus;
+                border-right-color: transparent;
+                //.form-control:focus
+                & + .input-group-append{
+                         .input-group-text{
+                             background-color: $color-white-0;
+                             border-color: $bd-focus;
+                             border-left-color: transparent;
+                             &:hover{
+                                 color: $color-white-0;
+                                 background-color: $color-red-0;
+                             }
+                        }
+                    }
+            }
+        }
+        .input-group-text{
+            background-color: transparent;
+            border-color: transparent;
+            color: $color-red-0;
+            &:hover{
+                 color: $color-white-0;
+                 background-color: $color-red-0;
+            }
+        }       
+        
+    }
+}
+@mixin styleButton($bg-color,$bd-color,$pd-y,$pd-x,$radius){
+    padding: $pd-y $pd-x;
+    background-color: $bg-color;
+    border: 1px solid $bd-color;
+    border-radius: $radius;
+}
+@mixin styleButtonHover($color,$bg-color,$boder){
+    color: $color;
+    background-color: $bg-color;
+    border-color: $boder;
+}
+// hàm lấy giá trị breakpoint
+@mixin responsive ($screen){
+    //kiểm tra screen có tồn tại trong breakpoint hay không
+    @if(map-has-key($map:$breakpoints, $key:$screen)){
+        //Nếu tìm tháy
+        //Lấy giá trị của screen gán vào cho biến value
+        $value: map-get($map:$breakpoints, $key:$screen );
+        @media screen and (max-width:$value){
+            @content ;
+        }
+    }
+    @else{
+        @warn 'Screen khong ton tai'
+    }
+}
