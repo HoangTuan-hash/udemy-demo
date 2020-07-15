@@ -1,39 +1,88 @@
-.header__left{
-    display: flex;
-    // align-items: center;
-    .navbar-brand{
-        img{
-            width: 110px;
+header.container{
+    max-width: 1440px;
+    padding: 10px 0;
+    .navbar{
+        padding: 0;
+        @include styleText($color-black-light,$fs-1,$fw-normal);
+    }
+    .header__left{
+        display: flex;
+        align-items: center;
+        .navbar-brand{
+            img{
+                width: 110px;
+            }
+        }
+        .header__form{
+            flex-grow: 1;
+            @include styleFormSeach($color-white-cream,$color-white-cream,$color-gray-6);
+        }
+        .categories{
+            margin-right: 5px;
+            align-self: center;
+            i{
+                margin-right: 5px;
+                color: $color-gray-7;
+            }
         }
     }
-    .header__form{
-        flex-grow: 1;
-        @include styleFormSeach($color-white-cream,$color-white-cream,$color-gray-6);
-    }
-    .categories{
-        margin-right: 5px;
-        align-self: center;
+    .header__right{
+        .navbar-nav{
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: row;
+        }
+        .nav-item{
+            margin: 0 10px;
+        }
+        .btn-group{
+            button{
+                margin: 0 5px;
+            }
+        }
+        .nav-link{
+            @include styleText($color-black-0,$fs-1,$fw-normal);
+            i{
+                @include styleText($color-gray-7,$fs-2,900);
+            }
+        }
+        .teach{
+            border-right: 1px solid $color-gray-6;;
+        }
     }
 }
-.header__right{
-    //Resoponsive
-    @include responsive(extra-large){
-        //content
+
+@include responsive("extra-large"){
+    //content
+    .header__right{
         .business,.teach{
             display: none;
         }
     }
+    
 }
+// .header__right{
+//     //Resoponsive
+//     @include responsive("extra-large"){
+//         //content
+//         .container{
+//             max-width: 1440px;
+//         }
+//         .business,.teach{
+//             display: none;
+//         }
+//     }
+// }
 @include responsive("medium"){
-        .header__left{
-            justify-content: center;
-            .categories,.header__form{
-                display: none;
-            }
+    .header__left{
+        justify-content: center;
+        .categories,.header__form{
+            display: none;
         }
-        .header__right{
-            .btn-group{
-                display: none;
-            }
+    }
+    .header__right{
+        .btn-group{
+            display: none;
         }
+    }
 }

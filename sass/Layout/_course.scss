@@ -1,0 +1,115 @@
+.course{
+    margin: 50px 0;
+}
+.course__descrition{
+    padding-top: $pd-2;
+    .course__descrition--content{
+        width: 100%;
+        height: 100%;
+        padding: 0 $pd-1;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-gray-5;
+        h3{
+            @include styleText($color-black-0,$fs-2 - 1,$fw-bold-1);
+        }
+        p{
+            @include styleText($color-black-0,$fs-0 + 1,$fw-normal);
+        }
+    }
+}
+.course__content{
+    .nav{
+        border-bottom: 1px solid $color-gray-6;
+        .nav-link{
+            @include styleText($color-black-0,$fs-0,$fw-normal);
+            position: relative;
+        }
+        .active{
+            background-color: $color-white-0;
+            @include styleText($color-black-0,$fs-0,$fw-normal);
+            &::after{
+                content: "";
+                width: 100%;
+                height: 5px;
+                background-color: $color-blue;
+                display: block;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+
+    }
+
+}
+.course__item{
+    padding: 0 $pd-0;
+    
+    .course__item--content{
+        padding-bottom: $pd-1;
+        box-shadow: 0 0 1px 1px rgba(20,23,28,.1),0 3px 1px 0 rgba(20,23,28,.1);
+        position: relative;
+        img{
+            width: 100%;
+        }
+        .course__bestSeller{
+            position: absolute;
+            top: $pd-1;
+            left: $pd-0;
+            
+            p{
+                @include styleText($color-black-0,$fs-1,$fw-normal);
+                background-color: $color-yellow;
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 100%;
+                border-left: 10px solid $color-yellow;
+                border-top: 10px solid transparent;
+                border-bottom: 10px solid transparent;
+            }
+        }
+        .course__text{
+            padding: 15px 10px 0 15px;
+            h3{
+                @include styleText($color-black-0,$fs-0,$fw-bold-1);
+            }
+            p{
+                @include styleText($color-gray-4,$fs-1 - 1,$fw-normal);
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+            &--rating{
+                display: inline-block;
+                i{
+                    @include styleText($color-yellow,$fs-1,$fw-normal);
+                }
+            }
+            .rating{
+                @include styleText($color-black-light,$fs-0,$fw-bold-1);
+            }
+            .count{
+                @include styleText($color-black-light,$fs-1 - 1,$fw-normal);
+            }
+            &--price{
+                text-align: right;
+                .price{
+                    @include styleText($color-black-0,$fs-1,$fw-bold-2);
+                    text-decoration: line-through;
+                    margin-right: $mg-1;
+                }
+                .sale{
+                    @include styleText($color-black-0,$fs-2 - 2,$fw-bold-1);
+                }
+            }
+        }
+    }
+    
+    
+}

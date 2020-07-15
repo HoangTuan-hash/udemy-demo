@@ -1,0 +1,34 @@
+.intro{
+    background: linear-gradient(45deg,$color-red-0 0%,$color-purple 100%);
+    padding: $pd-2 0;
+    @include styleText($color-white-0,$fs-0 + 2,$fw-normal);
+    .container{
+        .intro_content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .fx-lt{
+            justify-content: flex-start;
+        }
+        .fx-ct{
+            justify-content: center;
+        }
+        .fx-rt{
+            justify-content: flex-end;
+        }
+        .intro__icon{
+            i{
+                @include styleText($color-white-0,$fs-5 - 3,900);
+                padding-right: $mg-2 + 1;
+            }
+        }
+        .intro__text{
+            p{
+                margin: 0;
+            }
+        }
+    }
+    
+    
+}
