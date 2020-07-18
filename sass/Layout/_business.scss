@@ -1,0 +1,52 @@
+.business {
+    background-color: $color-gray-5;
+    border-bottom: 2px solid $color-gray-1;
+    &__content{
+        padding-bottom: $mg-3;
+    }
+    &__colum--left{
+        border-right: 2px solid $color-gray-1;
+
+        display: flex;
+        justify-content: flex-start;
+    }
+    &__colum--right{
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__item {
+        width: 60%;
+        padding-bottom: 30px;
+        text-align: center;
+        h3{
+            @include styleText($color-black-0,$fs-2,$fw-bold );
+        }
+        p{
+            @include styleText($color-gray-4,$fs-0 + 1,$fw-bold-0);
+        }
+        button{
+            padding: $pd-1;
+            background-color: $color-red-0;
+            color: $color-white-0;
+            border: none;
+            border-radius: $border-radius;
+            font-weight: $fw-bold-0;
+        }
+    }
+    
+}
+@include responsive("extra-large") {
+    //content
+    .business{
+        &__colum--left{
+            justify-content: center;
+        }
+        &__colum--right{
+            justify-content: center;
+        }
+        &__item{
+            text-align: left;
+        }
+    }
+    
+}

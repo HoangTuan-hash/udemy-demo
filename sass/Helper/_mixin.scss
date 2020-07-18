@@ -1,70 +1,157 @@
-@mixin styleText ($color,$fs,$fw){
+@mixin styleText($color, $fs, $fw) {
     color: $color;
     font-size: $fs;
     font-weight: $fw;
 }
-@mixin styleFormSeach ($bg-color,$bd-color,$bd-focus){
-    .input-group{
+@mixin styleFormSeach($bg-color, $bd-color, $bd-focus) {
+    .input-group {
         background-color: $bg-color;
         border: 1px solid $bd-color;
-        .form-control{
+        .form-control {
             background-color: transparent;
             border-color: transparent;
             transition: none;
             box-shadow: none;
-            &:focus{
+            &:focus {
                 background-color: $color-white-0;
                 border-color: $bd-focus;
                 border-right-color: transparent;
                 //.form-control:focus
-                & + .input-group-append{
-                         .input-group-text{
-                             background-color: $color-white-0;
-                             border-color: $bd-focus;
-                             border-left-color: transparent;
-                             &:hover{
-                                 color: $color-white-0;
-                                 background-color: $color-red-0;
-                             }
+                & + .input-group-append {
+                    .input-group-text {
+                        background-color: $color-white-0;
+                        border-color: $bd-focus;
+                        border-left-color: transparent;
+                        &:hover {
+                            color: $color-white-0;
+                            background-color: $color-red-0;
                         }
                     }
+                }
             }
         }
-        .input-group-text{
+        .input-group-text {
             background-color: transparent;
             border-color: transparent;
             color: $color-red-0;
-            &:hover{
-                 color: $color-white-0;
-                 background-color: $color-red-0;
+            &:hover {
+                color: $color-white-0;
+                background-color: $color-red-0;
             }
-        }       
-        
+        }
     }
 }
-@mixin styleButton($bg-color,$bd-color,$pd-y,$pd-x,$radius){
+@mixin styleButton($bg-color, $bd-color, $pd-y, $pd-x, $radius) {
     padding: $pd-y $pd-x;
     background-color: $bg-color;
     border: 1px solid $bd-color;
     border-radius: $radius;
 }
-@mixin styleButtonHover($color,$bg-color,$boder){
+@mixin styleButtonHover($color, $bg-color, $boder) {
     color: $color;
     background-color: $bg-color;
     border-color: $boder;
 }
-// hàm lấy giá trị breakpoint
-@mixin responsive ($screen){
-    //kiểm tra screen có tồn tại trong breakpoint hay không
-    @if(map-has-key($map:$breakpoints, $key:$screen)){
-        //Nếu tìm tháy
-        //Lấy giá trị của screen gán vào cho biến value
-        $value: map-get($map:$breakpoints, $key:$screen );
-        @media screen and (max-width:$value){
-            @content ;
+@mixin styleCourse() {
+    padding: 0 $pd-1;
+    .course__item--content {
+        padding-bottom: $pd-1;
+        box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+        position: relative;
+        .course__item--img {
+            position: relative;
+            .over__play {
+                width: 100%;
+                height: 100%;
+                display: block;
+
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                background-color: rgba(0, 0, 0, 0.3);
+                opacity: 0;
+            }
+            img {
+                display: block;
+                width: 100%;
+            }
+            &:hover{
+                .over__play {
+                    opacity: 1;
+                }
+            }
+        }
+        .course__bestSeller {
+            position: absolute;
+            top: $pd-1;
+            left: $pd-0;
+
+            p {
+                @include styleText($color-black-0, $fs-1, $fw-normal);
+                background-color: $color-yellow;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 100%;
+                border-left: 10px solid $color-yellow;
+                border-top: 10px solid transparent;
+                border-bottom: 10px solid transparent;
+            }
+        }
+        .course__text {
+            padding: 15px 10px 0 15px;
+            h3 {
+                @include styleText($color-black-0, $fs-0, $fw-bold-1);
+            }
+            p {
+                @include styleText($color-gray-4, $fs-1 - 1, $fw-normal);
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+            &--rating {
+                display: inline-block;
+                i {
+                    @include styleText($color-yellow, $fs-1, $fw-normal);
+                }
+            }
+            .rating {
+                @include styleText($color-black-light, $fs-0, $fw-bold-1);
+            }
+            .count {
+                @include styleText($color-black-light, $fs-1 - 1, $fw-normal);
+            }
+            &--price {
+                text-align: right;
+                .price {
+                    @include styleText($color-black-0, $fs-1, $fw-bold-2);
+                    text-decoration: line-through;
+                    margin-right: $mg-1;
+                }
+                .sale {
+                    @include styleText($color-black-0, $fs-2 - 2, $fw-bold-1);
+                }
+            }
         }
     }
-    @else{
-        @warn 'Screen khong ton tai'
+}
+// hàm lấy giá trị breakpoint
+@mixin responsive($screen) {
+    //kiểm tra screen có tồn tại trong breakpoint hay không
+    @if (map-has-key($map: $breakpoints, $key: $screen)) {
+        //Nếu tìm tháy
+        //Lấy giá trị của screen gán vào cho biến value
+        $value: map-get(
+            $map: $breakpoints,
+            $key: $screen,
+        );
+        @media screen and (max-width: $value) {
+            @content;
+        }
+    } @else {
+        @warn 'Screen khong ton tai';
     }
 }

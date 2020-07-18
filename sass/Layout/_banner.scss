@@ -1,0 +1,69 @@
+.banner{
+    position: relative;
+    background-color: $color-black-0;
+    margin: $mg-4 0;
+    border-top: 5px solid;
+    &::before{
+        content: "";
+        width: 100%;
+        height: 7px;
+        background: linear-gradient(45deg,$color-purple 0%,$color-red-0 100%);
+        position: absolute;
+        top: -10px;
+        left: 0;
+    }
+    &__content{
+        height: 400px;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(3,1fr);
+        .banner__item{
+            color: $color-white-0;
+            font-size: $fs-3;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .banner__react{
+            grid-column: 1 / span 2;
+        }
+        .banner__picture{
+            grid-column: 4 / span 2;
+        }
+        .banner__text{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &--item{
+                text-align: center;
+                h2{
+                   @include styleText($color-white-0,$fs-3 - 2,$fw-bold-1);
+                }
+                p{
+                    @include styleText($color-white-0,$fs-1 + 3,$fw-normal);
+                }
+                button{
+                    @include styleButton($color-red-0,$color-red-0,$pd-1,$pd-2,$border-radius);
+                    @include styleText($color-white-0,$fs-0,$fw-normal)
+                }
+            }
+        }
+    }
+}
+@include responsive("medium") {
+    //content
+    .banner__content{
+        display: block;
+        .banner__text{
+            width: 100%;
+            height: 100%;
+        }
+    } 
+}
+@include responsive("large") {
+    //content
+    .banner__text{
+       grid-column: 1 / span 5;
+    }
+}

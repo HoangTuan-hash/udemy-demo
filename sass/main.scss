@@ -3,8 +3,10 @@
 @import "./Helper/mixin";
 
 
+
 //Base
 @import './Base/reset';
+@import "./Base/customize";
 //file sass của thư viện trước.
 //import file sass của thư viện trong vendor
 
@@ -18,6 +20,13 @@
 @import './Layout/carousel';
 @import './Layout/intro';
 @import './Layout/course';
+@import './Layout/student';
+@import './Layout/view';
+@import './Layout/banner';
+@import './Layout/categories';
+@import './Layout/feedbacks';
+@import './Layout/partners';
+@import './Layout/business';
 //Pages
 
 //THeme

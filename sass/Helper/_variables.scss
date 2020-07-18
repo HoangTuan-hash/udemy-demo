@@ -33,6 +33,7 @@ $mg-0: 2px;
 $mg-1: 10px;
 $mg-2: 15px;
 $mg-3: 25px;
+$mg-4: 50px;
 
 //variable border-radius
 $border-radius: 2px;
@@ -42,6 +43,8 @@ $pd-0: 5px; //default
 $pd-1: 10px;
 $pd-2: 15px;
 $pd-3: 20px;
+$pd-4: 30px;
+$pd-5: 40px;
 
 
 //variable line-height
@@ -58,6 +61,7 @@ $fw-bold: bold;
 
 //break points
 $breakpoints:(
+    'out-extra': 1400px,
     'extra-large': 1200px,
     'large' : 992px,
     'medium' : 768px,

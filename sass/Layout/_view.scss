@@ -1,0 +1,9 @@
+.view{
+    padding-top: $pd-4;
+    h3{
+        @include styleText($color-black-0,$fs-3,$fw-normal);
+    }
+    .view__item{
+        @include styleCourse();
+    }
+}

@@ -1,0 +1,11 @@
+.myContainer {
+    width: 80%;
+    margin: 0 auto;
+}
+@include responsive("extra-large") {
+    //content
+    .myContainer {
+        width: 95%;
+        margin: 0 auto;
+    }
+}

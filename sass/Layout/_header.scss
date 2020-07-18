@@ -1,65 +1,65 @@
-header.container{
-    max-width: 1440px;
+header{
     padding: 10px 0;
-    .navbar{
+    .navbar {
         padding: 0;
-        @include styleText($color-black-light,$fs-1,$fw-normal);
+        @include styleText($color-black-light, $fs-1, $fw-normal);
     }
-    .header__left{
+    .header__left {
         display: flex;
         align-items: center;
-        .navbar-brand{
-            img{
+        .navbar-brand {
+            img {
                 width: 110px;
             }
         }
-        .header__form{
+        .header__form {
             flex-grow: 1;
-            @include styleFormSeach($color-white-cream,$color-white-cream,$color-gray-6);
+            @include styleFormSeach($color-white-cream, $color-white-cream, $color-gray-6);
         }
-        .categories{
+        .categories {
             margin-right: 5px;
             align-self: center;
-            i{
+            i {
                 margin-right: 5px;
                 color: $color-gray-7;
             }
         }
     }
-    .header__right{
-        .navbar-nav{
+    .header__right {
+        .navbar-nav {
             align-items: center;
             justify-content: flex-start;
             flex-direction: row;
         }
-        .nav-item{
+        .nav-item {
             margin: 0 10px;
         }
-        .btn-group{
-            button{
+        .btn-group {
+            button {
                 margin: 0 5px;
             }
         }
-        .nav-link{
-            @include styleText($color-black-0,$fs-1,$fw-normal);
-            i{
-                @include styleText($color-gray-7,$fs-2,900);
+        .nav-link {
+            @include styleText($color-black-0, $fs-1, $fw-normal);
+            i {
+                @include styleText($color-gray-7, $fs-2, 900);
             }
         }
-        .teach{
-            border-right: 1px solid $color-gray-6;;
+        .teach {
+            border-right: 1px solid $color-gray-6;
         }
     }
 }
 
-@include responsive("extra-large"){
+
+@include responsive("extra-large") {
     //content
-    .header__right{
-        .business,.teach{
+    .header__right {
+        .business,
+        .teach {
             display: none;
         }
     }
-    
 }
 // .header__right{
 //     //Resoponsive
@@ -73,15 +73,16 @@ header.container{
 //         }
 //     }
 // }
-@include responsive("medium"){
-    .header__left{
+@include responsive("medium") {
+    .header__left {
         justify-content: center;
-        .categories,.header__form{
+        .categories,
+        .header__form {
             display: none;
         }
     }
-    .header__right{
-        .btn-group{
+    .header__right {
+        .btn-group {
             display: none;
         }
     }

@@ -1,897 +1,1422 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Udemy</title>
-    <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
-    <!-- GOOGLE FONT -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <!-- BOOTSTRAP -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
-    <!-- MAIN -->
-    <link rel="stylesheet" href="./css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Udemy</title>
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!-- MAIN -->
+  <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
-    <!-- HEADER -->
-    <header class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="col-xl-7 col-lg-8 col-md-8 col-sm-10 col-10">
-                <div class="header__left">
-                    <a class="navbar-brand" href="#"><img src="./img/logo-coral.svg" alt=""></a>
-                    <span class="categories"><i class="fa fa-th"></i>Categories</span>
-                    <form class="header__form">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Search for anything" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                              <span class="input-group-text" id="basic-addon2"><i class="fa fa-search"></i></span>
-                            </div>
-                          </div>
-                    </form>
-                </div>
+  <!-- HEADER -->
+  <header class="myContainer">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="col-xl-7 col-lg-8 col-md-8 col-sm-10 col-10">
+        <div class="header__left">
+          <a class="navbar-brand" href="#"><img src="./img/logo-coral.svg" alt=""></a>
+          <span class="categories"><i class="fa fa-th"></i>Categories</span>
+          <form class="header__form">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search for anything"
+                aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <span class="input-group-text" id="basic-addon2"><i class="fa fa-search"></i></span>
+              </div>
             </div>
-            <div class="col-xl-5 col-lg-4 col-md-4 col-sm-2 col-2">
-                <div class="header__right">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item business">
-                          <a class="nav-link" href="#">Udemy for Business</a>
-                        </li>
-                        <li class="nav-item teach">
-                          <a class="nav-link " href="#">Teach on Udemy</a>
-                        </li>
-                        <li class="nav-item ">
-                          <a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i></a>
-                        </li>
-                        <li class="nav-item btn-group">
-                              <button class="ude-btnWhite">Log In</button>
-                              <button class="ude-btnRed">Sign Up</button>
-                        </li>
-                        
-                      </ul>
-                </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-xl-5 col-lg-4 col-md-4 col-sm-2 col-2">
+        <div class="header__right">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item business">
+              <a class="nav-link" href="#">Udemy for Business</a>
+            </li>
+            <li class="nav-item teach">
+              <a class="nav-link " href="#">Teach on Udemy</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i></a>
+            </li>
+            <li class="nav-item btn-group">
+              <button class="ude-btnWhite">Log In</button>
+              <button class="ude-btnRed">Sign Up</button>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- CAROUSEL -->
+  <section class="udemyCarousel">
+    <div class="myContainer">
+      <div class="col_5">
+        <div class="udemyCarousel__content">
+          <h1>Learn on your schedule</h1>
+          <p>Study any topic, anytime. Explore thousands of courses starting at $13.99 each. </p>
+          <form>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search for anything"
+                aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <span class="input-group-text" id="basic-addon2"><i class="fa fa-search"></i></span>
+              </div>
             </div>
-          </nav>
-    </header>
-    <!-- CAROUSEL -->
-    <section class="udemyCarousel">
-      <div class="container">
-        <div class="col_5">
-          <div class="udemyCarousel__content">
-            <h1>Learn on your schedule</h1>
-            <p>Study any topic, anytime. Explore thousands of courses starting at $13.99 each. </p>
-            <form>
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search for anything" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                  <span class="input-group-text" id="basic-addon2"><i class="fa fa-search"></i></span>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- INTRO -->
+  <section class="intro d-none d-md-block">
+    <div class="myContainer">
+      <div class="intro_content">
+        <div class="col-4 row fx-lt">
+          <div class="intro__icon d-none d-xl-block">
+            <i class="fab fa-codiepie"></i>
+          </div>
+          <div class="intro__text">
+            <span>100,000 online courses</span>
+            <p>Explore a variety of fresh topics</p>
+          </div>
+        </div>
+        <div class="col-4 row fx-ct">
+          <div class="intro__icon d-none d-xl-block">
+            <i class="fa fa-check-circle"></i>
+          </div>
+          <div class="intro__text">
+            <span>100,000 online courses</span>
+            <p>Explore a variety of fresh topics</p>
+          </div>
+        </div>
+        <div class="col-4 row fx-rt">
+          <div class="intro__icon d-none d-xl-block">
+            <i class="fa fa-bullseye"></i>
+          </div>
+          <div class="intro__text">
+            <span>100,000 online courses</span>
+            <p>Explore a variety of fresh topics</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- COURSE -->
+  <section class="course">
+    <div class="myContainer">
+      <div class="row">
+        <div class="col-xl-4 col-3 d-none d-lg-block  course__descrition">
+          <div class="course__descrition--content">
+            <div class="course__descrition--item">
+              <h3>The world’s largest selection of courses</h3>
+              <p>Choose from over 100,000 online video courses with new additions published every month</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-8 col-lg-8 col-12 course__content">
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#business" role="tab"
+                aria-controls="pills-home" aria-selected="true">Busines</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#design" role="tab"
+                aria-controls="pills-profile" aria-selected="false">Design</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#photography" role="tab"
+                aria-controls="pills-contact" aria-selected="false">Photography</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#development" role="tab"
+                aria-controls="pills-contact" aria-selected="false">Development</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#marketing" role="tab"
+                aria-controls="pills-contact" aria-selected="false">Marketing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#software" role="tab"
+                aria-controls="pills-contact" aria-selected="false">IT & Software</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#personal" role="tab"
+                aria-controls="pills-contact" aria-selected="false">Personal Development</a>
+            </li>
+          </ul>
+
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="business" role="tabpanel" aria-labelledby="pills-home-tab">
+              <div class="row">
+                <div class="col-6 col-sm-4 col-lg-3 course__item">
+                  <div class="course__item--content">
+                    <div class="course__item--img">
+                      <img src="./img/course1.jpg" alt="course-1">
+                      <div class="over__play"></div>
+                    </div>
+                    <div class="course__bestSeller">
+                      <p>BESTSELLER</p>
+                    </div>
+                    <div class="course__text">
+                      <h3>Body Language for Entrepreneurs</h3>
+                      <p>Vanessa Van Edwards,Science of People</p>
+                      <div class="course__text--rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <span class="rating">4.5</span>
+                      <span class="count">(6.934)</span>
+                      <div class="course__text--price">
+                        <span class="price">$199,99</span>
+                        <span class="sale">13,99</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 course__item">
+                  <div class="course__item--content">
+                    <div class="course__item--img">
+                      <img src="./img/course2.jpg" alt="course-1">
+                      <div class="over__play"></div>
+                    </div>
+                    <div class="course__bestSeller">
+                      <p>BESTSELLER</p>
+                    </div>
+                    <div class="course__text">
+                      <h3>Body Language for Entrepreneurs</h3>
+                      <p>Vanessa Van Edwards,Science of People</p>
+                      <div class="course__text--rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <span class="rating">4.5</span>
+                      <span class="count">(6.934)</span>
+                      <div class="course__text--price">
+                        <span class="price">$199,99</span>
+                        <span class="sale">13,99</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-lg-3 d-none d-sm-block col-md-4 course__item">
+                  <div class="course__item--content">
+                    <div class="course__item--img">
+                      <img src="./img/course3.jpg" alt="course-1">
+                      <div class="over__play"></div>
+                    </div>
+                    <div class="course__bestSeller">
+                      <p>BESTSELLER</p>
+                    </div>
+                    <div class="course__text">
+                      <h3>Body Language for Entrepreneurs</h3>
+                      <p>Vanessa Van Edwards,Science of People</p>
+                      <div class="course__text--rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <span class="rating">4.5</span>
+                      <span class="count">(6.934)</span>
+                      <div class="course__text--price">
+                        <span class="price">$199,99</span>
+                        <span class="sale">13,99</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 d-none d-lg-block course__item">
+                  <div class="course__item--content">
+                    <div class="course__item--img">
+                      <img src="./img/course4.jpg" alt="course-1">
+                      <div class="over__play"></div>
+                    </div>
+                    <div class="course__bestSeller">
+                      <p>BESTSELLER</p>
+                    </div>
+                    <div class="course__text">
+                      <h3>Body Language for Entrepreneurs</h3>
+                      <p>Vanessa Van Edwards,Science of People</p>
+                      <div class="course__text--rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <span class="rating">4.5</span>
+                      <span class="count">(6.934)</span>
+                      <div class="course__text--price">
+                        <span class="price">$199,99</span>
+                        <span class="sale">13,99</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </form>
+            </div>
+
+            <div class="tab-pane fade" id="design" role="tabpanel" aria-labelledby="pills-profile-tab">
+              <div class="row">
+                <div class="col-6 col-sm-4 col-lg-3 course__item">
+                  <div class="course__item--content">
+                    <div class="course__item--img">
+                      <img src="./img/course1.jpg" alt="course-1">
+                      <div class="over__play"></div>
+                    </div>
+                    <div class="course__bestSeller">
+                      <p>BESTSELLER</p>
+                    </div>
+                    <div class="course__text">
+                      <h3>Body Language for Entrepreneurs</h3>
+                      <p>Vanessa Van Edwards,Science of People</p>
+                      <div class="course__text--rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <span class="rating">4.5</span>
+                      <span class="count">(6.934)</span>
+                      <div class="course__text--price">
+                        <span class="price">$199,99</span>
+                        <span class="sale">13,99</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 course__item">
+                  <div class="course__item--content">
+                    <div class="course__item--img">
+                      <img src="./img/course2.jpg" alt="course-1">
+                      <div class="over__play"></div>
+                    </div>
+                    <div class="course__bestSeller">
+                      <p>BESTSELLER</p>
+                    </div>
+                    <div class="course__text">
+                      <h3>Body Language for Entrepreneurs</h3>
+                      <p>Vanessa Van Edwards,Science of People</p>
+                      <div class="course__text--rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <span class="rating">4.5</span>
+                      <span class="count">(6.934)</span>
+                      <div class="course__text--price">
+                        <span class="price">$199,99</span>
+                        <span class="sale">13,99</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-lg-3 d-none d-sm-block col-md-4 course__item">
+                  <div class="course__item--content">
+                    <div class="course__item--img">
+                      <img src="./img/course3.jpg" alt="course-1">
+                      <div class="over__play"></div>
+                    </div>
+                    <div class="course__bestSeller">
+                      <p>BESTSELLER</p>
+                    </div>
+                    <div class="course__text">
+                      <h3>Body Language for Entrepreneurs</h3>
+                      <p>Vanessa Van Edwards,Science of People</p>
+                      <div class="course__text--rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <span class="rating">4.5</span>
+                      <span class="count">(6.934)</span>
+                      <div class="course__text--price">
+                        <span class="price">$199,99</span>
+                        <span class="sale">13,99</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 d-none d-lg-block course__item">
+                  <div class="course__item--content">
+                    <div class="course__item--img">
+                      <img src="./img/course4.jpg" alt="course-1">
+                      <div class="over__play"></div>
+                    </div>
+                    <div class="course__bestSeller">
+                      <p>BESTSELLER</p>
+                    </div>
+                    <div class="course__text">
+                      <h3>Body Language for Entrepreneurs</h3>
+                      <p>Vanessa Van Edwards,Science of People</p>
+                      <div class="course__text--rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <span class="rating">4.5</span>
+                      <span class="count">(6.934)</span>
+                      <div class="course__text--price">
+                        <span class="price">$199,99</span>
+                        <span class="sale">13,99</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="photography" role="tabpanel" aria-labelledby="pills-contact-tab">
+              <div class="row">
+                <div class="col-6 col-sm-4 col-lg-3 course__item">
+                  <div class="course__item--content">
+                    <div class="course__item--img">
+                      <img src="./img/course1.jpg" alt="course-1">
+                      <div class="over__play"></div>
+                    </div>
+                    <div class="course__bestSeller">
+                      <p>BESTSELLER</p>
+                    </div>
+                    <div class="course__text">
+                      <h3>Body Language for Entrepreneurs</h3>
+                      <p>Vanessa Van Edwards,Science of People</p>
+                      <div class="course__text--rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <span class="rating">4.5</span>
+                      <span class="count">(6.934)</span>
+                      <div class="course__text--price">
+                        <span class="price">$199,99</span>
+                        <span class="sale">13,99</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 course__item">
+                  <div class="course__item--content">
+                    <div class="course__item--img">
+                      <img src="./img/course2.jpg" alt="course-1">
+                      <div class="over__play"></div>
+                    </div>
+                    <div class="course__bestSeller">
+                      <p>BESTSELLER</p>
+                    </div>
+                    <div class="course__text">
+                      <h3>Body Language for Entrepreneurs</h3>
+                      <p>Vanessa Van Edwards,Science of People</p>
+                      <div class="course__text--rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <span class="rating">4.5</span>
+                      <span class="count">(6.934)</span>
+                      <div class="course__text--price">
+                        <span class="price">$199,99</span>
+                        <span class="sale">13,99</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-lg-3 d-none d-sm-block col-md-4 course__item">
+                  <div class="course__item--content">
+                    <div class="course__item--img">
+                      <img src="./img/course3.jpg" alt="course-1">
+                      <div class="over__play"></div>
+                    </div>
+                    <div class="course__bestSeller">
+                      <p>BESTSELLER</p>
+                    </div>
+                    <div class="course__text">
+                      <h3>Body Language for Entrepreneurs</h3>
+                      <p>Vanessa Van Edwards,Science of People</p>
+                      <div class="course__text--rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <span class="rating">4.5</span>
+                      <span class="count">(6.934)</span>
+                      <div class="course__text--price">
+                        <span class="price">$199,99</span>
+                        <span class="sale">13,99</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 d-none d-lg-block course__item">
+                  <div class="course__item--content">
+                    <div class="course__item--img">
+                      <img src="./img/course4.jpg" alt="course-1">
+                      <div class="over__play"></div>
+                    </div>
+                    <div class="course__bestSeller">
+                      <p>BESTSELLER</p>
+                    </div>
+                    <div class="course__text">
+                      <h3>Body Language for Entrepreneurs</h3>
+                      <p>Vanessa Van Edwards,Science of People</p>
+                      <div class="course__text--rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <span class="rating">4.5</span>
+                      <span class="count">(6.934)</span>
+                      <div class="course__text--price">
+                        <span class="price">$199,99</span>
+                        <span class="sale">13,99</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="development" role="tabpanel" aria-labelledby="pills-contact-tab">
+              <div class="row">
+                <div class="col-6 col-sm-4 col-lg-3 course__item">
+                  <div class="course__item--content">
+                    <div class="course__item--img">
+                      <img src="./img/course1.jpg" alt="course-1">
+                      <div class="over__play"></div>
+                    </div>
+                    <div class="course__bestSeller">
+                      <p>BESTSELLER</p>
+                    </div>
+                    <div class="course__text">
+                      <h3>Body Language for Entrepreneurs</h3>
+                      <p>Vanessa Van Edwards,Science of People</p>
+                      <div class="course__text--rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <span class="rating">4.5</span>
+                      <span class="count">(6.934)</span>
+                      <div class="course__text--price">
+                        <span class="price">$199,99</span>
+                        <span class="sale">13,99</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 course__item">
+                  <div class="course__item--content">
+                    <div class="course__item--img">
+                      <img src="./img/course2.jpg" alt="course-1">
+                      <div class="over__play"></div>
+                    </div>
+                    <div class="course__bestSeller">
+                      <p>BESTSELLER</p>
+                    </div>
+                    <div class="course__text">
+                      <h3>Body Language for Entrepreneurs</h3>
+                      <p>Vanessa Van Edwards,Science of People</p>
+                      <div class="course__text--rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <span class="rating">4.5</span>
+                      <span class="count">(6.934)</span>
+                      <div class="course__text--price">
+                        <span class="price">$199,99</span>
+                        <span class="sale">13,99</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-lg-3 d-none d-sm-block col-md-4 course__item">
+                  <div class="course__item--content">
+                    <div class="course__item--img">
+                      <img src="./img/course3.jpg" alt="course-1">
+                      <div class="over__play"></div>
+                    </div>
+                    <div class="course__bestSeller">
+                      <p>BESTSELLER</p>
+                    </div>
+                    <div class="course__text">
+                      <h3>Body Language for Entrepreneurs</h3>
+                      <p>Vanessa Van Edwards,Science of People</p>
+                      <div class="course__text--rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <span class="rating">4.5</span>
+                      <span class="count">(6.934)</span>
+                      <div class="course__text--price">
+                        <span class="price">$199,99</span>
+                        <span class="sale">13,99</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 d-none d-lg-block course__item">
+                  <div class="course__item--content">
+                    <div class="course__item--img">
+                      <img src="./img/course4.jpg" alt="course-1">
+                      <div class="over__play"></div>
+                    </div>
+                    <div class="course__bestSeller">
+                      <p>BESTSELLER</p>
+                    </div>
+                    <div class="course__text">
+                      <h3>Body Language for Entrepreneurs</h3>
+                      <p>Vanessa Van Edwards,Science of People</p>
+                      <div class="course__text--rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <span class="rating">4.5</span>
+                      <span class="count">(6.934)</span>
+                      <div class="course__text--price">
+                        <span class="price">$199,99</span>
+                        <span class="sale">13,99</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="marketing" role="tabpanel" aria-labelledby="pills-contact-tab">
+              <div class="row">
+                <div class="col-6 col-sm-4 col-lg-3 course__item">
+                  <div class="course__item--content">
+                    <div class="course__item--img">
+                      <img src="./img/course1.jpg" alt="course-1">
+                      <div class="over__play"></div>
+                    </div>
+                    <div class="course__bestSeller">
+                      <p>BESTSELLER</p>
+                    </div>
+                    <div class="course__text">
+                      <h3>Body Language for Entrepreneurs</h3>
+                      <p>Vanessa Van Edwards,Science of People</p>
+                      <div class="course__text--rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <span class="rating">4.5</span>
+                      <span class="count">(6.934)</span>
+                      <div class="course__text--price">
+                        <span class="price">$199,99</span>
+                        <span class="sale">13,99</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 course__item">
+                  <div class="course__item--content">
+                    <div class="course__item--img">
+                      <img src="./img/course2.jpg" alt="course-1">
+                      <div class="over__play"></div>
+                    </div>
+                    <div class="course__bestSeller">
+                      <p>BESTSELLER</p>
+                    </div>
+                    <div class="course__text">
+                      <h3>Body Language for Entrepreneurs</h3>
+                      <p>Vanessa Van Edwards,Science of People</p>
+                      <div class="course__text--rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <span class="rating">4.5</span>
+                      <span class="count">(6.934)</span>
+                      <div class="course__text--price">
+                        <span class="price">$199,99</span>
+                        <span class="sale">13,99</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-lg-3 d-none d-sm-block col-md-4 course__item">
+                  <div class="course__item--content">
+                    <div class="course__item--img">
+                      <img src="./img/course3.jpg" alt="course-1">
+                      <div class="over__play"></div>
+                    </div>
+                    <div class="course__bestSeller">
+                      <p>BESTSELLER</p>
+                    </div>
+                    <div class="course__text">
+                      <h3>Body Language for Entrepreneurs</h3>
+                      <p>Vanessa Van Edwards,Science of People</p>
+                      <div class="course__text--rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <span class="rating">4.5</span>
+                      <span class="count">(6.934)</span>
+                      <div class="course__text--price">
+                        <span class="price">$199,99</span>
+                        <span class="sale">13,99</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 d-none d-lg-block course__item">
+                  <div class="course__item--content">
+                    <div class="course__item--img">
+                      <img src="./img/course4.jpg" alt="course-1">
+                      <div class="over__play"></div>
+                    </div>
+                    <div class="course__bestSeller">
+                      <p>BESTSELLER</p>
+                    </div>
+                    <div class="course__text">
+                      <h3>Body Language for Entrepreneurs</h3>
+                      <p>Vanessa Van Edwards,Science of People</p>
+                      <div class="course__text--rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <span class="rating">4.5</span>
+                      <span class="count">(6.934)</span>
+                      <div class="course__text--price">
+                        <span class="price">$199,99</span>
+                        <span class="sale">13,99</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="marketing" role="tabpanel" aria-labelledby="pills-contact-tab">
+              <div class="row">
+                <div class="col-6 col-sm-4 col-lg-3 course__item">
+                  <div class="course__item--content">
+                    <div class="course__item--img">
+                      <img src="./img/course1.jpg" alt="course-1">
+                      <div class="over__play"></div>
+                    </div>
+                    <div class="course__bestSeller">
+                      <p>BESTSELLER</p>
+                    </div>
+                    <div class="course__text">
+                      <h3>Body Language for Entrepreneurs</h3>
+                      <p>Vanessa Van Edwards,Science of People</p>
+                      <div class="course__text--rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <span class="rating">4.5</span>
+                      <span class="count">(6.934)</span>
+                      <div class="course__text--price">
+                        <span class="price">$199,99</span>
+                        <span class="sale">13,99</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 course__item">
+                  <div class="course__item--content">
+                    <div class="course__item--img">
+                      <img src="./img/course2.jpg" alt="course-1">
+                      <div class="over__play"></div>
+                    </div>
+                    <div class="course__bestSeller">
+                      <p>BESTSELLER</p>
+                    </div>
+                    <div class="course__text">
+                      <h3>Body Language for Entrepreneurs</h3>
+                      <p>Vanessa Van Edwards,Science of People</p>
+                      <div class="course__text--rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <span class="rating">4.5</span>
+                      <span class="count">(6.934)</span>
+                      <div class="course__text--price">
+                        <span class="price">$199,99</span>
+                        <span class="sale">13,99</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-lg-3 d-none d-sm-block col-md-4 course__item">
+                  <div class="course__item--content">
+                    <div class="course__item--img">
+                      <img src="./img/course3.jpg" alt="course-1">
+                      <div class="over__play"></div>
+                    </div>
+                    <div class="course__bestSeller">
+                      <p>BESTSELLER</p>
+                    </div>
+                    <div class="course__text">
+                      <h3>Body Language for Entrepreneurs</h3>
+                      <p>Vanessa Van Edwards,Science of People</p>
+                      <div class="course__text--rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <span class="rating">4.5</span>
+                      <span class="count">(6.934)</span>
+                      <div class="course__text--price">
+                        <span class="price">$199,99</span>
+                        <span class="sale">13,99</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 d-none d-lg-block course__item">
+                  <div class="course__item--content">
+                    <div class="course__item--img">
+                      <img src="./img/course4.jpg" alt="course-1">
+                      <div class="over__play"></div>
+                    </div>
+                    <div class="course__bestSeller">
+                      <p>BESTSELLER</p>
+                    </div>
+                    <div class="course__text">
+                      <h3>Body Language for Entrepreneurs</h3>
+                      <p>Vanessa Van Edwards,Science of People</p>
+                      <div class="course__text--rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <span class="rating">4.5</span>
+                      <span class="count">(6.934)</span>
+                      <div class="course__text--price">
+                        <span class="price">$199,99</span>
+                        <span class="sale">13,99</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="personal" role="tabpanel" aria-labelledby="pills-contact-tab">
+              <div class="row">
+                <div class="col-6 col-sm-4 col-lg-3 course__item">
+                  <div class="course__item--content">
+                    <div class="course__item--img">
+                      <img src="./img/course1.jpg" alt="course-1">
+                      <div class="over__play"></div>
+                    </div>
+                    <div class="course__bestSeller">
+                      <p>BESTSELLER</p>
+                    </div>
+                    <div class="course__text">
+                      <h3>Body Language for Entrepreneurs</h3>
+                      <p>Vanessa Van Edwards,Science of People</p>
+                      <div class="course__text--rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <span class="rating">4.5</span>
+                      <span class="count">(6.934)</span>
+                      <div class="course__text--price">
+                        <span class="price">$199,99</span>
+                        <span class="sale">13,99</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 course__item">
+                  <div class="course__item--content">
+                    <div class="course__item--img">
+                      <img src="./img/course2.jpg" alt="course-1">
+                      <div class="over__play"></div>
+                    </div>
+                    <div class="course__bestSeller">
+                      <p>BESTSELLER</p>
+                    </div>
+                    <div class="course__text">
+                      <h3>Body Language for Entrepreneurs</h3>
+                      <p>Vanessa Van Edwards,Science of People</p>
+                      <div class="course__text--rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <span class="rating">4.5</span>
+                      <span class="count">(6.934)</span>
+                      <div class="course__text--price">
+                        <span class="price">$199,99</span>
+                        <span class="sale">13,99</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-lg-3 d-none d-sm-block col-md-4 course__item">
+                  <div class="course__item--content">
+                    <div class="course__item--img">
+                      <img src="./img/course3.jpg" alt="course-1">
+                      <div class="over__play"></div>
+                    </div>
+                    <div class="course__bestSeller">
+                      <p>BESTSELLER</p>
+                    </div>
+                    <div class="course__text">
+                      <h3>Body Language for Entrepreneurs</h3>
+                      <p>Vanessa Van Edwards,Science of People</p>
+                      <div class="course__text--rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <span class="rating">4.5</span>
+                      <span class="count">(6.934)</span>
+                      <div class="course__text--price">
+                        <span class="price">$199,99</span>
+                        <span class="sale">13,99</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 d-none d-lg-block course__item">
+                  <div class="course__item--content">
+                    <div class="course__item--img">
+                      <img src="./img/course4.jpg" alt="course-1">
+                      <div class="over__play"></div>
+                    </div>
+                    <div class="course__bestSeller">
+                      <p>BESTSELLER</p>
+                    </div>
+                    <div class="course__text">
+                      <h3>Body Language for Entrepreneurs</h3>
+                      <p>Vanessa Van Edwards,Science of People</p>
+                      <div class="course__text--rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <span class="rating">4.5</span>
+                      <span class="count">(6.934)</span>
+                      <div class="course__text--price">
+                        <span class="price">$199,99</span>
+                        <span class="sale">13,99</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- INTRO -->
-    <section class="intro d-none d-md-block">
-      <div class="container">
-        <div class="intro_content">
-          <div class="col-4 row fx-lt">
-            <div class="intro__icon d-none d-xl-block">
-              <i class="fab fa-codiepie"></i>
-            </div>
-            <div class="intro__text">
-              <span>100,000 online courses</span>
-              <p>Explore a variety of fresh topics</p>
-            </div> 
-          </div>
-          <div class="col-4 row fx-ct">
-            <div class="intro__icon d-none d-xl-block">
-              <i class="fa fa-check-circle"></i>
-            </div>
-            <div class="intro__text">
-              <span>100,000 online courses</span>
-              <p>Explore a variety of fresh topics</p>
-            </div> 
-          </div>
-          <div class="col-4 row fx-rt">
-            <div class="intro__icon d-none d-xl-block">
-              <i class="fa fa-bullseye"></i>
-            </div>
-            <div class="intro__text">
-              <span>100,000 online courses</span>
-              <p>Explore a variety of fresh topics</p>
-            </div> 
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="course">
-      <div class="container">
+    </div>
+  </section>
+  <!-- STUDENT -->
+  <section class="student">
+    <div class="myContainer">
+      <div class="student__content">
         <div class="row">
-          <div class="col-3 course__descrition">
-            <div class="course__descrition--content">
-              <div class="course__descrition--item">
-                <h3>The world’s largest selection of courses</h3>
-                <p>Choose from over 100,000 online video courses with new additions published every month</p>
+          <div class="col-12 col-sm-6 col-md-4 student__item">
+            <div class="student__item--content d-lg-flex">
+              <div class="student__item--img">
+                <img src="https://i.udemycdn.com/browse_components/value-props-unit/go_own_pace.svg" alt="img">
+              </div>
+              <div class="student__item--text">
+                <h4>Go at your own pace</h4>
+                <p>Enjoy lifetime access to courses on Udemy’s website and app</p>
               </div>
             </div>
           </div>
-          <div class="col-9 course__content">
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-              <li class="nav-item">
-                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#business" role="tab" aria-controls="pills-home" aria-selected="true">Busines</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#design" role="tab" aria-controls="pills-profile" aria-selected="false">Design</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#photography" role="tab" aria-controls="pills-contact" aria-selected="false">Photography</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#development" role="tab" aria-controls="pills-contact" aria-selected="false">Development</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#marketing" role="tab" aria-controls="pills-contact" aria-selected="false">Marketing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#software" role="tab" aria-controls="pills-contact" aria-selected="false">IT & Software</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#personal" role="tab" aria-controls="pills-contact" aria-selected="false">Personal Development</a>
-              </li>
-            </ul>
-
-            <div class="tab-content" id="pills-tabContent">
-              <div class="tab-pane fade show active" id="business" role="tabpanel" aria-labelledby="pills-home-tab">
-                <div class="row">
-                  <div class="col-3 course__item">
-                    <div class="course__item--content">
-                      <img src="./img/course1.jpg" alt="course-1">
-                      <div class="course__bestSeller">
-                        <p>BESTSELLER</p>
-                      </div>
-                      <div class="course__text">
-                        <h3>Body Language for Entrepreneurs</h3>
-                        <p>Vanessa Van Edwards,Science of People</p>
-                        <div class="course__text--rating">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <span class="rating">4.5</span>
-                        <span class="count">(6.934)</span>
-                        <div class="course__text--price">
-                          <span class="price">$199,99</span>
-                          <span class="sale">13,99</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-3 course__item">
-                    <div class="course__item--content">
-                      <img src="./img/course2.jpg" alt="course-1">
-                      <div class="course__bestSeller">
-                        <p>BESTSELLER</p>
-                      </div>
-                      <div class="course__text">
-                        <h3>Body Language for Entrepreneurs</h3>
-                        <p>Vanessa Van Edwards,Science of People</p>
-                        <div class="course__text--rating">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <span class="rating">4.5</span>
-                        <span class="count">(6.934)</span>
-                        <div class="course__text--price">
-                          <span class="price">$199,99</span>
-                          <span class="sale">13,99</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-3 course__item">
-                    <div class="course__item--content">
-                      <img src="./img/course3.jpg" alt="course-1">
-                      <div class="course__bestSeller">
-                        <p>BESTSELLER</p>
-                      </div>
-                      <div class="course__text">
-                        <h3>Body Language for Entrepreneurs</h3>
-                        <p>Vanessa Van Edwards,Science of People</p>
-                        <div class="course__text--rating">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <span class="rating">4.5</span>
-                        <span class="count">(6.934)</span>
-                        <div class="course__text--price">
-                          <span class="price">$199,99</span>
-                          <span class="sale">13,99</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-3 course__item">
-                    <div class="course__item--content">
-                      <img src="./img/course4.jpg" alt="course-1">
-                      <div class="course__bestSeller">
-                        <p>BESTSELLER</p>
-                      </div>
-                      <div class="course__text">
-                        <h3>Body Language for Entrepreneurs</h3>
-                        <p>Vanessa Van Edwards,Science of People</p>
-                        <div class="course__text--rating">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <span class="rating">4.5</span>
-                        <span class="count">(6.934)</span>
-                        <div class="course__text--price">
-                          <span class="price">$199,99</span>
-                          <span class="sale">13,99</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+          <div class="col-sm-6 col-md-4 student__item d-none d-sm-block">
+            <div class="student__item--content d-lg-flex">
+              <div class="student__item--img">
+                <img src="https://i.udemycdn.com/browse_components/value-props-unit/go_own_pace.svg" alt="img">
               </div>
-
-              <div class="tab-pane fade" id="design" role="tabpanel" aria-labelledby="pills-profile-tab">
-                <div class="row">
-                  <div class="col-3 course__item">
-                    <div class="course__item--content">
-                      <img src="./img/course1.jpg" alt="course-1">
-                      <div class="course__bestSeller">
-                        <p>BESTSELLER</p>
-                      </div>
-                      <div class="course__text">
-                        <h3>Body Language for Entrepreneurs</h3>
-                        <p>Vanessa Van Edwards,Science of People</p>
-                        <div class="course__text--rating">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <span class="rating">4.5</span>
-                        <span class="count">(6.934)</span>
-                        <div class="course__text--price">
-                          <span class="price">$199,99</span>
-                          <span class="sale">13,99</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-3 course__item">
-                    <div class="course__item--content">
-                      <img src="./img/course2.jpg" alt="course-1">
-                      <div class="course__bestSeller">
-                        <p>BESTSELLER</p>
-                      </div>
-                      <div class="course__text">
-                        <h3>Body Language for Entrepreneurs</h3>
-                        <p>Vanessa Van Edwards,Science of People</p>
-                        <div class="course__text--rating">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <span class="rating">4.5</span>
-                        <span class="count">(6.934)</span>
-                        <div class="course__text--price">
-                          <span class="price">$199,99</span>
-                          <span class="sale">13,99</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-3 course__item">
-                    <div class="course__item--content">
-                      <img src="./img/course3.jpg" alt="course-1">
-                      <div class="course__bestSeller">
-                        <p>BESTSELLER</p>
-                      </div>
-                      <div class="course__text">
-                        <h3>Body Language for Entrepreneurs</h3>
-                        <p>Vanessa Van Edwards,Science of People</p>
-                        <div class="course__text--rating">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <span class="rating">4.5</span>
-                        <span class="count">(6.934)</span>
-                        <div class="course__text--price">
-                          <span class="price">$199,99</span>
-                          <span class="sale">13,99</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-3 course__item">
-                    <div class="course__item--content">
-                      <img src="./img/course4.jpg" alt="course-1">
-                      <div class="course__bestSeller">
-                        <p>BESTSELLER</p>
-                      </div>
-                      <div class="course__text">
-                        <h3>Body Language for Entrepreneurs</h3>
-                        <p>Vanessa Van Edwards,Science of People</p>
-                        <div class="course__text--rating">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <span class="rating">4.5</span>
-                        <span class="count">(6.934)</span>
-                        <div class="course__text--price">
-                          <span class="price">$199,99</span>
-                          <span class="sale">13,99</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div class="student__item--text">
+                <h4>Learn from industry experts</h4>
+                <p>Select from top instructors around the world</p>
               </div>
-
-              <div class="tab-pane fade" id="photography" role="tabpanel" aria-labelledby="pills-contact-tab">
-                <div class="row">
-                  <div class="col-3 course__item">
-                    <div class="course__item--content">
-                      <img src="./img/course1.jpg" alt="course-1">
-                      <div class="course__bestSeller">
-                        <p>BESTSELLER</p>
-                      </div>
-                      <div class="course__text">
-                        <h3>Body Language for Entrepreneurs</h3>
-                        <p>Vanessa Van Edwards,Science of People</p>
-                        <div class="course__text--rating">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <span class="rating">4.5</span>
-                        <span class="count">(6.934)</span>
-                        <div class="course__text--price">
-                          <span class="price">$199,99</span>
-                          <span class="sale">13,99</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-3 course__item">
-                    <div class="course__item--content">
-                      <img src="./img/course2.jpg" alt="course-1">
-                      <div class="course__bestSeller">
-                        <p>BESTSELLER</p>
-                      </div>
-                      <div class="course__text">
-                        <h3>Body Language for Entrepreneurs</h3>
-                        <p>Vanessa Van Edwards,Science of People</p>
-                        <div class="course__text--rating">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <span class="rating">4.5</span>
-                        <span class="count">(6.934)</span>
-                        <div class="course__text--price">
-                          <span class="price">$199,99</span>
-                          <span class="sale">13,99</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-3 course__item">
-                    <div class="course__item--content">
-                      <img src="./img/course3.jpg" alt="course-1">
-                      <div class="course__bestSeller">
-                        <p>BESTSELLER</p>
-                      </div>
-                      <div class="course__text">
-                        <h3>Body Language for Entrepreneurs</h3>
-                        <p>Vanessa Van Edwards,Science of People</p>
-                        <div class="course__text--rating">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <span class="rating">4.5</span>
-                        <span class="count">(6.934)</span>
-                        <div class="course__text--price">
-                          <span class="price">$199,99</span>
-                          <span class="sale">13,99</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-3 course__item">
-                    <div class="course__item--content">
-                      <img src="./img/course4.jpg" alt="course-1">
-                      <div class="course__bestSeller">
-                        <p>BESTSELLER</p>
-                      </div>
-                      <div class="course__text">
-                        <h3>Body Language for Entrepreneurs</h3>
-                        <p>Vanessa Van Edwards,Science of People</p>
-                        <div class="course__text--rating">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <span class="rating">4.5</span>
-                        <span class="count">(6.934)</span>
-                        <div class="course__text--price">
-                          <span class="price">$199,99</span>
-                          <span class="sale">13,99</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <div class="col-md-4 student__item d-none d-md-block">
+            <div class="student__item--content d-lg-flex">
+              <div class="student__item--img">
+                <img src="https://i.udemycdn.com/browse_components/value-props-unit/go_own_pace.svg" alt="img">
               </div>
-
-              <div class="tab-pane fade" id="development" role="tabpanel" aria-labelledby="pills-contact-tab">
-                <div class="row">
-                  <div class="col-3 course__item">
-                    <div class="course__item--content">
-                      <img src="./img/course1.jpg" alt="course-1">
-                      <div class="course__bestSeller">
-                        <p>BESTSELLER</p>
-                      </div>
-                      <div class="course__text">
-                        <h3>Body Language for Entrepreneurs</h3>
-                        <p>Vanessa Van Edwards,Science of People</p>
-                        <div class="course__text--rating">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <span class="rating">4.5</span>
-                        <span class="count">(6.934)</span>
-                        <div class="course__text--price">
-                          <span class="price">$199,99</span>
-                          <span class="sale">13,99</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-3 course__item">
-                    <div class="course__item--content">
-                      <img src="./img/course2.jpg" alt="course-1">
-                      <div class="course__bestSeller">
-                        <p>BESTSELLER</p>
-                      </div>
-                      <div class="course__text">
-                        <h3>Body Language for Entrepreneurs</h3>
-                        <p>Vanessa Van Edwards,Science of People</p>
-                        <div class="course__text--rating">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <span class="rating">4.5</span>
-                        <span class="count">(6.934)</span>
-                        <div class="course__text--price">
-                          <span class="price">$199,99</span>
-                          <span class="sale">13,99</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-3 course__item">
-                    <div class="course__item--content">
-                      <img src="./img/course3.jpg" alt="course-1">
-                      <div class="course__bestSeller">
-                        <p>BESTSELLER</p>
-                      </div>
-                      <div class="course__text">
-                        <h3>Body Language for Entrepreneurs</h3>
-                        <p>Vanessa Van Edwards,Science of People</p>
-                        <div class="course__text--rating">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <span class="rating">4.5</span>
-                        <span class="count">(6.934)</span>
-                        <div class="course__text--price">
-                          <span class="price">$199,99</span>
-                          <span class="sale">13,99</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-3 course__item">
-                    <div class="course__item--content">
-                      <img src="./img/course4.jpg" alt="course-1">
-                      <div class="course__bestSeller">
-                        <p>BESTSELLER</p>
-                      </div>
-                      <div class="course__text">
-                        <h3>Body Language for Entrepreneurs</h3>
-                        <p>Vanessa Van Edwards,Science of People</p>
-                        <div class="course__text--rating">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <span class="rating">4.5</span>
-                        <span class="count">(6.934)</span>
-                        <div class="course__text--price">
-                          <span class="price">$199,99</span>
-                          <span class="sale">13,99</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div class="student__item--text">
+                <h4>Find video courses on almost any topic</h4>
+                <p>Build your library for your career and personal growth</p>
               </div>
+            </div>
+          </div>
 
-              <div class="tab-pane fade" id="marketing" role="tabpanel" aria-labelledby="pills-contact-tab">
-                <div class="row">
-                  <div class="col-3 course__item">
-                    <div class="course__item--content">
-                      <img src="./img/course1.jpg" alt="course-1">
-                      <div class="course__bestSeller">
-                        <p>BESTSELLER</p>
-                      </div>
-                      <div class="course__text">
-                        <h3>Body Language for Entrepreneurs</h3>
-                        <p>Vanessa Van Edwards,Science of People</p>
-                        <div class="course__text--rating">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <span class="rating">4.5</span>
-                        <span class="count">(6.934)</span>
-                        <div class="course__text--price">
-                          <span class="price">$199,99</span>
-                          <span class="sale">13,99</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-3 course__item">
-                    <div class="course__item--content">
-                      <img src="./img/course2.jpg" alt="course-1">
-                      <div class="course__bestSeller">
-                        <p>BESTSELLER</p>
-                      </div>
-                      <div class="course__text">
-                        <h3>Body Language for Entrepreneurs</h3>
-                        <p>Vanessa Van Edwards,Science of People</p>
-                        <div class="course__text--rating">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <span class="rating">4.5</span>
-                        <span class="count">(6.934)</span>
-                        <div class="course__text--price">
-                          <span class="price">$199,99</span>
-                          <span class="sale">13,99</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-3 course__item">
-                    <div class="course__item--content">
-                      <img src="./img/course3.jpg" alt="course-1">
-                      <div class="course__bestSeller">
-                        <p>BESTSELLER</p>
-                      </div>
-                      <div class="course__text">
-                        <h3>Body Language for Entrepreneurs</h3>
-                        <p>Vanessa Van Edwards,Science of People</p>
-                        <div class="course__text--rating">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <span class="rating">4.5</span>
-                        <span class="count">(6.934)</span>
-                        <div class="course__text--price">
-                          <span class="price">$199,99</span>
-                          <span class="sale">13,99</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-3 course__item">
-                    <div class="course__item--content">
-                      <img src="./img/course4.jpg" alt="course-1">
-                      <div class="course__bestSeller">
-                        <p>BESTSELLER</p>
-                      </div>
-                      <div class="course__text">
-                        <h3>Body Language for Entrepreneurs</h3>
-                        <p>Vanessa Van Edwards,Science of People</p>
-                        <div class="course__text--rating">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <span class="rating">4.5</span>
-                        <span class="count">(6.934)</span>
-                        <div class="course__text--price">
-                          <span class="price">$199,99</span>
-                          <span class="sale">13,99</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- VIEW -->
+  <section class="view">
+    <div class="myContainer">
+      <h3>Students are viewing</h3>
+      <div class="row">
+        <div class="col-xl-2 col-lg-3 col-sm-4 col-6 view__item">
+          <div class="course__item--content">
+            <div class="course__item--img">
+              <img src="./img/course5.jpg" alt="course-1">
+              <div class="over__play"></div>
+            </div>
+            <div class="course__bestSeller">
+              <p>BESTSELLER</p>
+            </div>
+            <div class="course__text">
+              <h3>Body Language for Entrepreneurs</h3>
+              <p>Vanessa Van Edwards,Science of People</p>
+              <div class="course__text--rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
               </div>
-
-              <div class="tab-pane fade" id="marketing" role="tabpanel" aria-labelledby="pills-contact-tab">
-                <div class="row">
-                  <div class="col-3 course__item">
-                    <div class="course__item--content">
-                      <img src="./img/course1.jpg" alt="course-1">
-                      <div class="course__bestSeller">
-                        <p>BESTSELLER</p>
-                      </div>
-                      <div class="course__text">
-                        <h3>Body Language for Entrepreneurs</h3>
-                        <p>Vanessa Van Edwards,Science of People</p>
-                        <div class="course__text--rating">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <span class="rating">4.5</span>
-                        <span class="count">(6.934)</span>
-                        <div class="course__text--price">
-                          <span class="price">$199,99</span>
-                          <span class="sale">13,99</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-3 course__item">
-                    <div class="course__item--content">
-                      <img src="./img/course2.jpg" alt="course-1">
-                      <div class="course__bestSeller">
-                        <p>BESTSELLER</p>
-                      </div>
-                      <div class="course__text">
-                        <h3>Body Language for Entrepreneurs</h3>
-                        <p>Vanessa Van Edwards,Science of People</p>
-                        <div class="course__text--rating">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <span class="rating">4.5</span>
-                        <span class="count">(6.934)</span>
-                        <div class="course__text--price">
-                          <span class="price">$199,99</span>
-                          <span class="sale">13,99</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-3 course__item">
-                    <div class="course__item--content">
-                      <img src="./img/course3.jpg" alt="course-1">
-                      <div class="course__bestSeller">
-                        <p>BESTSELLER</p>
-                      </div>
-                      <div class="course__text">
-                        <h3>Body Language for Entrepreneurs</h3>
-                        <p>Vanessa Van Edwards,Science of People</p>
-                        <div class="course__text--rating">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <span class="rating">4.5</span>
-                        <span class="count">(6.934)</span>
-                        <div class="course__text--price">
-                          <span class="price">$199,99</span>
-                          <span class="sale">13,99</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-3 course__item">
-                    <div class="course__item--content">
-                      <img src="./img/course4.jpg" alt="course-1">
-                      <div class="course__bestSeller">
-                        <p>BESTSELLER</p>
-                      </div>
-                      <div class="course__text">
-                        <h3>Body Language for Entrepreneurs</h3>
-                        <p>Vanessa Van Edwards,Science of People</p>
-                        <div class="course__text--rating">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <span class="rating">4.5</span>
-                        <span class="count">(6.934)</span>
-                        <div class="course__text--price">
-                          <span class="price">$199,99</span>
-                          <span class="sale">13,99</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <span class="rating">4.5</span>
+              <span class="count">(6.934)</span>
+              <div class="course__text--price">
+                <span class="price">$199,99</span>
+                <span class="sale">13,99</span>
               </div>
-
-              <div class="tab-pane fade" id="personal" role="tabpanel" aria-labelledby="pills-contact-tab">
-                <div class="row">
-                  <div class="col-3 course__item">
-                    <div class="course__item--content">
-                      <img src="./img/course1.jpg" alt="course-1">
-                      <div class="course__bestSeller">
-                        <p>BESTSELLER</p>
-                      </div>
-                      <div class="course__text">
-                        <h3>Body Language for Entrepreneurs</h3>
-                        <p>Vanessa Van Edwards,Science of People</p>
-                        <div class="course__text--rating">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <span class="rating">4.5</span>
-                        <span class="count">(6.934)</span>
-                        <div class="course__text--price">
-                          <span class="price">$199,99</span>
-                          <span class="sale">13,99</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-3 course__item">
-                    <div class="course__item--content">
-                      <img src="./img/course2.jpg" alt="course-1">
-                      <div class="course__bestSeller">
-                        <p>BESTSELLER</p>
-                      </div>
-                      <div class="course__text">
-                        <h3>Body Language for Entrepreneurs</h3>
-                        <p>Vanessa Van Edwards,Science of People</p>
-                        <div class="course__text--rating">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <span class="rating">4.5</span>
-                        <span class="count">(6.934)</span>
-                        <div class="course__text--price">
-                          <span class="price">$199,99</span>
-                          <span class="sale">13,99</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-3 course__item">
-                    <div class="course__item--content">
-                      <img src="./img/course3.jpg" alt="course-1">
-                      <div class="course__bestSeller">
-                        <p>BESTSELLER</p>
-                      </div>
-                      <div class="course__text">
-                        <h3>Body Language for Entrepreneurs</h3>
-                        <p>Vanessa Van Edwards,Science of People</p>
-                        <div class="course__text--rating">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <span class="rating">4.5</span>
-                        <span class="count">(6.934)</span>
-                        <div class="course__text--price">
-                          <span class="price">$199,99</span>
-                          <span class="sale">13,99</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-3 course__item">
-                    <div class="course__item--content">
-                      <img src="./img/course4.jpg" alt="course-1">
-                      <div class="course__bestSeller">
-                        <p>BESTSELLER</p>
-                      </div>
-                      <div class="course__text">
-                        <h3>Body Language for Entrepreneurs</h3>
-                        <p>Vanessa Van Edwards,Science of People</p>
-                        <div class="course__text--rating">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <span class="rating">4.5</span>
-                        <span class="count">(6.934)</span>
-                        <div class="course__text--price">
-                          <span class="price">$199,99</span>
-                          <span class="sale">13,99</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-3 col-sm-4 col-6 view__item">
+          <div class="course__item--content">
+            <div class="course__item--img">
+              <img src="./img/course6.jpg" alt="course-1">
+              <div class="over__play"></div>
+            </div>
+            <div class="course__bestSeller">
+              <p>BESTSELLER</p>
+            </div>
+            <div class="course__text">
+              <h3>Body Language for Entrepreneurs</h3>
+              <p>Vanessa Van Edwards,Science of People</p>
+              <div class="course__text--rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <span class="rating">4.5</span>
+              <span class="count">(6.934)</span>
+              <div class="course__text--price">
+                <span class="price">$199,99</span>
+                <span class="sale">13,99</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-3 col-4 d-none d-sm-block view__item">
+          <div class="course__item--content">
+            <div class="course__item--img">
+              <img src="./img/course7.jpg" alt="course-1">
+              <div class="over__play"></div>
+            </div>
+            <div class="course__bestSeller">
+              <p>BESTSELLER</p>
+            </div>
+            <div class="course__text">
+              <h3>Body Language for Entrepreneurs</h3>
+              <p>Vanessa Van Edwards,Science of People</p>
+              <div class="course__text--rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <span class="rating">4.5</span>
+              <span class="count">(6.934)</span>
+              <div class="course__text--price">
+                <span class="price">$199,99</span>
+                <span class="sale">13,99</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-3 d-none d-lg-block view__item">
+          <div class="course__item--content">
+            <div class="course__item--img">
+              <img src="./img/course8.jpg" alt="course-1">
+              <div class="over__play"></div>
+            </div>
+            <div class="course__bestSeller">
+              <p>BESTSELLER</p>
+            </div>
+            <div class="course__text">
+              <h3>Body Language for Entrepreneurs</h3>
+              <p>Vanessa Van Edwards,Science of People</p>
+              <div class="course__text--rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <span class="rating">4.5</span>
+              <span class="count">(6.934)</span>
+              <div class="course__text--price">
+                <span class="price">$199,99</span>
+                <span class="sale">13,99</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2 view__item d-none d-xl-block">
+          <div class="course__item--content">
+            <div class="course__item--img">
+              <img src="./img/course9.jpg" alt="course-1">
+              <div class="over__play"></div>
+            </div>
+            <div class="course__bestSeller">
+              <p>BESTSELLER</p>
+            </div>
+            <div class="course__text">
+              <h3>Body Language for Entrepreneurs</h3>
+              <p>Vanessa Van Edwards,Science of People</p>
+              <div class="course__text--rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <span class="rating">4.5</span>
+              <span class="count">(6.934)</span>
+              <div class="course__text--price">
+                <span class="price">$199,99</span>
+                <span class="sale">13,99</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2 view__item d-none d-xl-block">
+          <div class="course__item--content">
+            <div class="course__item--img">
+              <img src="./img/course10.jpg" alt="course-1">
+              <div class="over__play"></div>
+            </div>
+            <div class="course__bestSeller">
+              <p>BESTSELLER</p>
+            </div>
+            <div class="course__text">
+              <h3>Body Language for Entrepreneurs</h3>
+              <p>Vanessa Van Edwards,Science of People</p>
+              <div class="course__text--rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <span class="rating">4.5</span>
+              <span class="count">(6.934)</span>
+              <div class="course__text--price">
+                <span class="price">$199,99</span>
+                <span class="sale">13,99</span>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="student"></section>
-    <section class="banner"></section>
-    <section class="topCategories"></section>
-    <section class="feedbacks"></section>
-    <section class="partners"></section>
-    <footer></footer>
-    <!-- JQUERY -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <!-- BOOTSTRAP -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    </div>
+  </section>
+  <section class="banner d-none d-sm-block">
+    <div class="banner__content">
+      <div class="banner__item d-none d-md-flex">
+        <i class="fa fa-laptop-code"></i>
+      </div>
+      <div class="banner__item d-none d-md-flex">
+        <i class="fab fa-phoenix-framework"></i>
+      </div>
+      <div class="banner__item d-none d-md-flex">
+        <i class="fa fa-balance-scale"></i>
+      </div>
+      <div class="banner__item d-none d-md-flex">
+        <i class="fa fa-university"></i>
+      </div>
+      <div class="banner__item d-none d-md-flex">
+        <i class="fab fa-app-store-ios"></i>
+      </div>
+      <div class="banner__item banner__react d-none d-lg-flex">
+        <i class="fab fa-react"></i>
+      </div>
+      <div class="banner__item banner__text">
+        <div class="banner__text--item">
+          <h2>Get personalized recommendations</h2>
+          <p>Answers a few questions for your top picks</p>
+          <button>Get Started</button>
+        </div>
+      </div>
+      <div class="banner__item banner__picture d-none d-lg-flex">
+        <i class="fa fa-images"></i>
+      </div>
+      <div class="banner__item d-none d-md-flex">
+        <i class="fa fa-desktop"></i>
+      </div>
+      <div class="banner__item d-none d-md-flex">
+        <i class="fa fa-chart-line"></i>
+      </div>
+      <div class="banner__item d-none d-md-flex">
+        <i class="fa fa-chart-bar"></i>
+      </div>
+      <div class="banner__item d-none d-md-flex">
+        <i class="fa fa-gopuram"></i>
+      </div>
+      <div class="banner__item d-none d-md-flex">
+        <i class="fa fa-birthday-cake"></i>
+      </div>
+    </div>
+  </section>
+  <!-- TOP CATEGORIES -->
+  <section class="topCategories">
+    <div class="myContainer">
+      <h3>Top categories</h3>
+      <div class="topCategories__content">
+        <div class="topCategories__item topCategories__top">
+          <div class="row">
+            <div class="col-4 col-md-3 topCategories__colum">
+              <div class=" topCategories__item--content d-lg-flex">
+                <i class="fa fa-laptop-code"></i>
+                <p>Development
+                <p>
+              </div>
+            </div>
+            <div class="col-4 col-md-3 topCategories__colum">
+              <div class=" topCategories__item--content d-lg-flex">
+                <i class="fa fa-signal"></i>
+                <p>Business</p>
+              </div>
+            </div>
+            <div class="col-4 col-md-3 topCategories__colum ">
+              <div class=" topCategories__item--content d-lg-flex">
+                <i class="fa fa-desktop"></i>
+                <p>IT and Software</p>
+              </div>
+            </div>
+            <div class="col-md-3 topCategories__colum d-none d-md-block">
+              <div class=" topCategories__item--content d-lg-flex">
+                <i class="fa fa-pencil-ruler"></i>
+                <p>Design</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="topCategories__item topCategories__bottom">
+          <div class="row">
+            <div class="col-4 col-md-3 topCategories__colum">
+              <div class=" topCategories__item--content d-lg-flex">
+                <i class="fa fa-bullseye"></i>
+                <p>Marketing
+                <p>
+              </div>
+            </div>
+            <div class="col-4 col-md-3 topCategories__colum">
+              <div class=" topCategories__item--content d-lg-flex">
+                <i class="fab fa-opencart"></i>
+                <p>Personal Development</p>
+              </div>
+            </div>
+            <div class="col-4 col-md-3 topCategories__colum ">
+              <div class=" topCategories__item--content d-lg-flex">
+                <i class="fa fa-camera-retro"></i>
+                <p>Photography</p>
+              </div>
+            </div>
+            <div class="col-md-3 topCategories__colum d-none d-md-block">
+              <div class=" topCategories__item--content d-lg-flex">
+                <i class="fa fa-music"></i>
+                <p>Music</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FEEDBACK -->
+  <section class="feedbacks">
+    <div class="myContainer">
+      <h3>What our student have to say</h3>
+      <div class="feedbacks__content">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4 feedbacks__colum">
+            <div class="feedbacks__item">
+              <div class="feedbacks__title">
+                <img src="./img/student1.jpg" alt="">
+                <span>Borivoje</span>
+              </div>
+              <div class="feedbacks__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non nesciunt quod sapiente quibusdam
+                  nostrum tempora nemo ducimus cupiditate mollitia, illo commodi! Tempore reiciendis </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 feedbacks__colum">
+            <div class="feedbacks__item">
+              <div class="feedbacks__title">
+                <img src="./img/student2.jpg" alt="">
+                <span>Maria</span>
+              </div>
+              <div class="feedbacks__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non nesciunt quod sapiente quibusdam
+                  nostrum tempora nemo ducimus cupiditate mollitia, illo commodi! Tempore reiciendis </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 feedbacks__colum d-none d-md-block">
+            <div class="feedbacks__item">
+              <div class="feedbacks__title">
+                <img src="./img/student3.jpg" alt="">
+                <span>Julaina</span>
+              </div>
+              <div class="feedbacks__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non nesciunt quod sapiente quibusdam
+                  nostrum tempora nemo ducimus cupiditate mollitia, illo commodi! Tempore reiciendis </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="partners">
+    <div class="myContainer">
+      <div class="partners__content">
+        <div class="partners__item">
+          <div class="partners__item--content">
+            <h4>Trusted by companies of all sizes</h4>
+            <ul>
+              <li>
+                <a href="#"><img src="./img/booking.svg" alt="booking"></a>
+              </li>
+              <li>
+                <a href="#"><img src="./img/volkswagen.svg" alt="booking"></a>
+              </li>
+              <li>
+                <a href="#"><img src="./img/mercedes.svg" alt="booking"></a>
+              </li>
+              <li>
+                <a href="#"><img src="./img/pinterest.svg" alt="booking"></a>
+              </li>
+              <li>
+                <a href="#"><img src="./img/adidas.svg" alt="booking"></a>
+              </li>
+              <li>
+                <a href="#"><img src="./img/paypal.svg" alt="booking"></a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="business">
+    <div class="myContainer">
+      <div class="business__content">
+        <div class="row">
+          <div class="col-12 col-sm-6 business__colum--left">
+            <div class="business__item">
+              <h3>Become an intructor</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore culpa nobis magni impedit</p>
+              <button>Start teaching today</button>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 business__colum--right">
+            <div class="business__item">
+              <h3>Udemy for business</h3>
+              <p>Get unlimited access to 4,000 + of Udemy's top course for your team</p>
+              <button>Get Udemy for business</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer></footer>
+  <!-- JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <!-- BOOTSTRAP -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
+
 </html>

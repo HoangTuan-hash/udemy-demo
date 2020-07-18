@@ -1,0 +1,43 @@
+.partners {
+    background-color: $color-gray-5;
+    padding: $pd-4 0;
+    &__item--content {
+        text-align: center;
+        width: 75%;
+        margin: 0 auto;
+        h4 {
+            @include styleText($color-gray-7, $fs-0, $fw-normal);
+        }
+        ul {
+            padding: 30px;
+            list-style: none;
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+}
+@include responsive("out-extra") {
+    .partners {
+        &__item--content {
+            text-align: center;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+}
+@include responsive("medium") {
+    .myContainer {
+        width: 100%;
+        .partners__item--content{
+            ul{
+                display: block;
+                padding: 0;
+                li{
+                    margin-top: $mg-3;
+                }
+            }
+        }
+    }
+}

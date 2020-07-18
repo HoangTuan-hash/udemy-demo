@@ -2,7 +2,7 @@
     background: linear-gradient(45deg,$color-red-0 0%,$color-purple 100%);
     padding: $pd-2 0;
     @include styleText($color-white-0,$fs-0 + 2,$fw-normal);
-    .container{
+    .myContainer{
         .intro_content{
             display: flex;
             justify-content: space-between;
@@ -20,7 +20,7 @@
         .intro__icon{
             i{
                 @include styleText($color-white-0,$fs-5 - 3,900);
-                padding-right: $mg-2 + 1;
+                padding-right: $mg-1 + 2;
             }
         }
         .intro__text{
