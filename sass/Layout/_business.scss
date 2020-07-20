@@ -25,6 +25,7 @@
             @include styleText($color-gray-4,$fs-0 + 1,$fw-bold-0);
         }
         button{
+            width: max-content;
             padding: $pd-1;
             background-color: $color-red-0;
             color: $color-white-0;

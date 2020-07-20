@@ -26,12 +26,13 @@
             align-items: center;
         }
         .banner__react{
-            grid-column: 1 / span 2;
+            justify-content: flex-end;
         }
         .banner__picture{
-            grid-column: 4 / span 2;
+            justify-content: flex-start;
         }
         .banner__text{
+            grid-column: 2 / span 3;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -63,7 +64,10 @@
 }
 @include responsive("large") {
     //content
-    .banner__text{
-       grid-column: 1 / span 5;
-    }
+    .banner__content{
+        .banner__text{
+            grid-column: 1 / span 5;
+         }
+    } 
+    
 }

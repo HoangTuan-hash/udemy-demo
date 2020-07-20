@@ -1,0 +1,31 @@
+footer{
+    padding: $pd-5 0;
+    border-bottom: 5px solid $color-red-0;
+    .footer__item{
+        display: flex;
+        align-items: center;
+        @include styleText($color-blue,$fs-0,$fw-bold-2);
+        img{
+            width: 100px;
+            margin-right: $mg-2;
+        }
+        p{
+            margin: 0;
+        }
+        .terms{
+            margin-right: $mg-2;
+        }
+    }
+    .footer__right{
+        justify-content: flex-end;
+    }
+}
+@include responsive("medium") {
+    //content
+    footer{
+        .footer__item{
+            justify-content: center;
+            margin-bottom: $mg-1;
+        }
+    }
+}

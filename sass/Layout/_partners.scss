@@ -28,16 +28,19 @@
     }
 }
 @include responsive("medium") {
-    .myContainer {
-        width: 100%;
-        .partners__item--content{
-            ul{
-                display: block;
-                padding: 0;
-                li{
-                    margin-top: $mg-3;
+    .partners{
+        .myContainer {
+            width: 100%;
+            .partners__item--content{
+                ul{
+                    display: block;
+                    padding: 0;
+                    li{
+                        margin-top: $mg-3;
+                    }
                 }
             }
         }
     }
+    
 }
